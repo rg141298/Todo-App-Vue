@@ -63,21 +63,6 @@
                       >
                         {{ task.text }}
                       </span>
-                      <!-- <span
-                        v-else
-                        slot="label"
-                        class="ml-3 grey--text"
-                        :class="(task.done && 'grey--text') || 'text--primary'"
-                      >
-                        {{ task.text.substring(0, 24) + ".." }}
-                      </span> -->
-                      <!-- <v-list-item-subtitle
-                        style="-webkit-line-clamp: unset !important;"
-                        slot="label"
-                        :class="(task.done && 'grey--text') || 'text--primary'"
-                        class="ml-3 wrap-text"
-                        v-html="task.text"
-                      ></v-list-item-subtitle> -->
                     </v-checkbox>
                     <ul style="width: 70px">
                       <v-icon
@@ -132,7 +117,6 @@
                   <v-list-item-action style="width: 100%; flex-direction: row ">
                     <v-checkbox v-model="task.done" color="info darken-3">
                       <div
-                        
                         style="text-decoration: line-through"
                         slot="label"
                         :class="(task.done && 'grey--text') || 'text--primary'"
@@ -295,7 +279,7 @@ export default {
   width: auto;
   */
 }
-/* .completedTasks {
+.completedTasks {
   width: 250px;
   display: inline-block;
   text-overflow: ellipsis;
@@ -304,5 +288,5 @@ export default {
 }
 .completedTasks:hover {
   white-space: normal;
-} */
+}
 </style>
